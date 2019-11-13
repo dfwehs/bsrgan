@@ -1,0 +1,44 @@
+# environment
+device: "cuda:0"
+random_seed: 4115
+batch_size: 64
+
+# data setting
+dataroot: "./data"
+dataset: "SUN"
+image_embedding: "res101"
+class_embedding: "att"
+nclass_all: 717
+f_dim: 2048
+atts_dim: 102
+nz: 102
+gzsl: True
+zsl: False
+
+# save model
+gzsl_model_path: 'sun_gzsl_model'
+zsl_model_path: 'sun_zsl_model'
+
+# train
+lr: 0.0002
+r_lr: 0.0002
+h_dim: 4096
+lambda1: 10
+beta1: 0.5
+nepoch: 100
+critic_iter: 5
+cls_weight: 0.01
+syn_num: 100
+syn_num_s: 50
+optimizer: "RMS"
+preprocessing: True
+sematic_cla: True
+GD: 1
+
+# test cla
+classifier_lr: 0.0005
+ratio: 0.5
+cla_epoch: 50
+cla_syn_num: 100
+lambda2: 0
+cla: 1

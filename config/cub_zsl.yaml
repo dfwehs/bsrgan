@@ -1,0 +1,44 @@
+# environment
+device: "cuda:0"
+random_seed: 3483
+batch_size: 64
+
+# data setting
+dataroot: "./data"
+dataset: "CUB"
+image_embedding: "res101"
+class_embedding: "att"
+nclass_all: 200
+f_dim: 2048
+atts_dim: 312
+nz: 312
+gzsl: False
+zsl: True
+
+# save model
+gzsl_model_path: 'cub_gzsl_model'
+zsl_model_path: 'cub_zsl_model'
+
+# train
+lr: 0.0001
+r_lr: 0.0001
+h_dim: 4096
+lambda1: 10
+beta1: 0.5
+nepoch: 100
+critic_iter: 5
+cls_weight: 0.01
+syn_num: 150
+syn_num_s: 150
+optimizer: "RMS"
+preprocessing: True
+sematic_cla: True
+GD: 1
+
+# test cla
+classifier_lr: 0.0001
+ratio: 0.6
+cla_epoch: 50
+cla_syn_num: 150
+lambda2: 0
+cla: 2

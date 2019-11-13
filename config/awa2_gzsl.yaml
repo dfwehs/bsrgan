@@ -1,0 +1,44 @@
+# environment
+device: "cuda:0"
+random_seed: 9182
+batch_size: 64
+
+# data setting
+dataroot: "./data"
+dataset: "AWA2"
+image_embedding: "res101"
+class_embedding: "att"
+nclass_all: 50
+f_dim: 2048
+atts_dim: 85
+nz: 85
+gzsl: False
+zsl: True
+
+# save model
+gzsl_model_path: 'awa2_gzsl_model'
+zsl_model_path: 'awa2_zsl_model'
+
+# train
+lr: 0.000006
+r_lr: 0.000006
+h_dim: 4096
+lambda1: 10
+beta1: 0.5
+nepoch: 100
+critic_iter: 5
+cls_weight: 0.01
+syn_num: 300
+syn_num_s: 300
+optimizer: "ADAM"
+preprocessing: True
+sematic_cla: True
+GD: 2
+
+# test cla
+classifier_lr: 0.0001
+ratio: 0.1
+cla_epoch: 50
+cla_syn_num: 2100
+lambda2: 0
+cla: 1
