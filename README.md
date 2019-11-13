@@ -11,11 +11,11 @@ Python 3.6, PyTroch 1.3
 The structure of data folder:
 
 ```
-data	--
-	--APY
-	--AWA2
-	--CUB
-	--SUN
+data--
+    |--APY
+    |--AWA2
+    |--CUB
+    |--SUN
 ```
 
 ### Run our code
