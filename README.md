@@ -11,7 +11,7 @@ Python 3.6, PyTroch 1.3
 The structure of data folder:
 
 ```
-data--
+data	--
 	--APY
 	--AWA2
 	--CUB
