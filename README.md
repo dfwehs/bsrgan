@@ -4,7 +4,7 @@ Dataset is available [here](https://www.mpi-inf.mpg.de/departments/computer-visi
 
 ### Dependencies
 
-Python 3.6, PyTroch 1.3
+Python 3.7, PyTroch 1.3
 
 ### DATA Folder
 
